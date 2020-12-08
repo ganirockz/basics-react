@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Footer from "./components/Footer";
+import Nav from "./components/Nav";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World!!</h1>
-      <p>Hi This is Ganesh :)</p>
+function App(){
+  return(
+    <div>
+    <Nav />
+    <Footer />
     </div>
   );
 }
 
-export default App;
+export default App
