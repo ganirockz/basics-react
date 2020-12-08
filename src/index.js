@@ -1,8 +1,7 @@
 import React from 'react'
-import ReactDOM, { unstable_renderSubtreeIntoContainer } from 'react-dom'
-import MyInfo from "../src/components/MyInfo.js"
-
+import ReactDOM from 'react-dom'
+import App from "./App.js"
 ReactDOM.render(
-  <MyInfo />
+  <App />
   , document.getElementById("root")
 )
