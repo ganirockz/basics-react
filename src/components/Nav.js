@@ -1,9 +1,8 @@
 import React from "react"
-import MyInfo from "./MyInfo"
 
 function Nav(){
     return(
-        <nav><MyInfo /></nav>  
+        <nav className="navbar">This is header</nav>  
     );
 }
 
