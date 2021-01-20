@@ -5,31 +5,35 @@ function App(){
   return(
     <div className="contacts">
         <ContactCard 
-            name="Mr. Whiskerson" 
-            imgUrl="http://placekitten.com/300/200" 
-            phone="(212) 555-1234" 
-            email="mr.whiskerson@catmap.meow" 
+          contact = {{
+            name:"Mr. Whiskerson" ,
+            imgUrl:"http://placekitten.com/300/200", 
+            phone:"(212) 555-1234" ,
+            email:"mr.whiskerson@catmap.meow"}} 
         />
 
           <ContactCard 
-            name="Fluffykins" 
-            imgUrl="http://placekitten.com/400/200" 
-            phone="(212) 555-2345" 
-            email="fluffykins@catmap.meow" 
+            contact = {{
+            name:"Fluffykins", 
+            imgUrl:"http://placekitten.com/400/200", 
+            phone:"(212) 555-2345" ,
+            email:"fluffykins@catmap.meow"}} 
         />
 
           <ContactCard 
-            name="Destroyer" 
-            imgUrl="http://placekitten.com/400/300" 
-            phone="(212) 555-3456" 
-            email="destroyer@catmap.meow" 
+            contact = {{
+            name:"Destroyer" ,
+            imgUrl:"http://placekitten.com/400/300" ,
+            phone:"(212) 555-3456" ,
+            email:"destroyer@catmap.meow"}} 
         />
 
           <ContactCard 
-            name="Felix" 
-            imgUrl="http://placekitten.com/200/100" 
-            phone="(212) 555-4567" 
-            email="felix@catmap.meow" 
+            contact = {{
+            name:"Felix", 
+            imgUrl:"http://placekitten.com/200/100", 
+            phone:"(212) 555-4567" ,
+            email:"felix@catmap.meow"}}
         />
     </div>
   );
