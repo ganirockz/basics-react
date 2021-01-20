@@ -1,27 +1,38 @@
 import React from "react"
 import "./App.css"
+import ContactCard from "./components/ContactCard"
 function App(){
-  const date = new Date(2020,10,2,13);
-  const hours = date.getHours();
-  let timeOfDay
-  const styles = {
-    fontSize:30
-  }
-
-  if(hours <12){
-    timeOfDay = "morning"
-    styles.color = "blue"
-  } else if(hours >= 12 && hours < 17){
-    timeOfDay = "afternoon"
-    styles.color = "green"
-  } else{
-    timeOfDay = "night"
-    styles.color = "red"
-  }
-
   return(
-    <h1 style={styles}>Good {timeOfDay}</h1>  
+    <div className="contacts">
+        <ContactCard 
+            name="Mr. Whiskerson" 
+            imgUrl="http://placekitten.com/300/200" 
+            phone="(212) 555-1234" 
+            email="mr.whiskerson@catmap.meow" 
+        />
+
+          <ContactCard 
+            name="Fluffykins" 
+            imgUrl="http://placekitten.com/400/200" 
+            phone="(212) 555-2345" 
+            email="fluffykins@catmap.meow" 
+        />
+
+          <ContactCard 
+            name="Destroyer" 
+            imgUrl="http://placekitten.com/400/300" 
+            phone="(212) 555-3456" 
+            email="destroyer@catmap.meow" 
+        />
+
+          <ContactCard 
+            name="Felix" 
+            imgUrl="http://placekitten.com/200/100" 
+            phone="(212) 555-4567" 
+            email="felix@catmap.meow" 
+        />
+    </div>
   );
 }
 
-export default App
+export default App;
